@@ -1093,7 +1093,7 @@ function animate() {
 
         if (thirdPerson) {
             if (joystickActive && joystickDirection.length() > 0) {
-                direction.set(joystickDirection.x, 0, joystickDirection.y);
+                direction.set(-joystickDirection.x, 0, -joystickDirection.y);
                 isMoving = true;
             }
             direction.normalize();
